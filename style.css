@@ -97,3 +97,123 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
 }
+
+/* Artist Section Styles */
+.artist-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.artist-list h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.artist-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.artist-list li {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Luke Combs specific layout */
+.luke-combs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.luke-combs img {
+    flex: 0 0 250px;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.luke-combs div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.luke-combs h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.luke-combs p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .luke-combs {
+        flex-direction: column;
+    }
+    
+    .luke-combs img {
+        flex: none;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Garth Brooks specific layout */
+.garth-brooks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.garth-brooks img {
+    flex: 0 0 250px;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.garth-brooks div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.garth-brooks h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.garth-brooks p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .luke-combs {
+        flex-direction: column;
+    }
+
+    .garth-brooks img {
+        flex: none;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
