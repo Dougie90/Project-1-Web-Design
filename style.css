@@ -73,12 +73,112 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
   order: -1; 
 }
+/* Footer Styles */
+
 footer {
   background-color: #f6c385; 
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 2rem;
   margin-top: 3rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Facebook */
+.social-media a .fa-facebook {
+  background-color: #1877f2;
+  padding: 8px;
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Twitter */  
+.social-media a .fa-twitter {
+  background-color: #1da1f2;
+  padding: 8px;
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Instagram */
+.social-media a .fa-instagram {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  padding: 8px;
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* YouTube */
+.social-media a .fa-youtube {
+  background-color: #ff0000;
+  padding: 8px;
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.social-media a:hover .fa-facebook {
+  background-color: #166fe5;
+}
+
+.social-media a:hover .fa-twitter {
+  background-color: #1991db;
+}
+
+.social-media a:hover .fa-youtube {
+  background-color: #e60000;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
 }   
 
 .main-nav ul {
@@ -131,103 +231,56 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Luke Combs specific layout */
-.luke-combs {
+/* Artist Profile Layout */
+.artist-profile {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     align-items: flex-start;
 }
 
-.luke-combs img {
+.artist-profile img {
     flex: 0 0 250px;
     width: 250px;
-    height: auto;
+    height: 300px;
     border-radius: 8px;
     object-fit: cover;
 }
 
-.luke-combs div {
+.artist-profile div {
     flex: 1;
     min-width: 300px;
 }
 
-.luke-combs h3 {
+.artist-profile h3 {
     margin-top: 0;
     margin-bottom: 1rem;
     color: #333;
     font-size: 1.8rem;
 }
 
-.luke-combs p {
+.artist-profile p {
     margin-bottom: 1rem;
     line-height: 1.6;
     color: #555;
 }
 
-@media (max-width: 768px) {
-    .luke-combs {
-        flex-direction: column;
-    }
-    
-    .luke-combs img {
-        flex: none;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-}
-
-/* Garth Brooks specific layout */
-.garth-brooks {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-.garth-brooks img {
-    flex: 0 0 250px;
-    width: 250px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.garth-brooks div {
-    flex: 1;
-    min-width: 300px;
-}
-
-.garth-brooks h3 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    color: #333;
-    font-size: 1.8rem;
-}
-
-.garth-brooks a {
+.artist-profile a {
     text-decoration: none;
     color: inherit;
 }
 
-.garth-brooks a:hover {
+.artist-profile a:hover {
     color: #007bff;
     text-decoration: underline;
 }
 
-.garth-brooks p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
 @media (max-width: 768px) {
-    .garth-brooks {
+    .artist-profile {
         flex-direction: column;
     }
 
-    .garth-brooks img {
+    .artist-profile img {
         flex: none;
         width: 100%;
         max-width: 300px;
@@ -235,50 +288,43 @@ footer {
     }
 }
 
-/* Derek Ryan specific layout */
-.derek-ryan {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
+
+.contact-info {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
 }
 
-.derek-ryan img {
-    flex: 0 0 250px;
-    width: 250px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+/* Social Media Icons */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-.derek-ryan div {
-    flex: 1;
-    min-width: 300px;
+.fa:hover {
+    opacity: 0.7;
 }
 
-.derek-ryan h3 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    color: #333;
-    font-size: 1.8rem;
+.fa-facebook {
+  background: #3B5998;
+  color: white;
 }
 
-.derek-ryan p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    color: #555;
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
-@media (max-width: 768px) {
-    .derek-ryan {
-        flex-direction: column;
-    }
-
-    .derek-ryan img {
-        flex: none;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
