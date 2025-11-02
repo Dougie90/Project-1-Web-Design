@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav a {
   text-decoration: none;
   color: #333;
-  font-weight: 700;
+  font-weight: 800;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease;
 }
 
-/* Social Media Brand Colors */
+/* Social Media Brand Colors https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
 .social-media .fa-facebook {
   background-color: #1877f2;
 }
@@ -152,28 +152,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ff0000;
 }
 
-/* Social Media Hover Effects */
-.social-media a:hover i {
-  transform: translateY(-2px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.social-media .fa-facebook:hover {
-  background-color: #166fe5;
-}
-
-.social-media .fa-twitter:hover {
-  background-color: #1991db;
-}
-
-.social-media .fa-youtube:hover {
-  background-color: #e60000;
-}
-
 /* ==========================================================================
    ARTIST STYLES
    ========================================================================== */
-
+       
 .artist-list {
   max-width: 1200px;
   margin: 0 auto;
@@ -436,3 +418,69 @@ button:active {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-size: 1.3rem;
 }
+
+/* ==========================================================================
+   Table /tour summary STYLES
+   ========================================================================== */
+
+.tour-summary {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1100px;
+  color: #fff;
+  text-align: left;
+}
+
+.tour-summary h2 {
+  color: #ff9f00;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tour-summary p {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.tour-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.tour-table th,
+.tour-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tour-table th {
+  background-color: #ff6f00;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tour-table tr:hover {
+  background-color: rgba(255, 111, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+/* View Details link */
+.details-link {
+  color: #ff9f00;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.details-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
